@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+html,
+body {
+    background: url("images/no.jpg") no-repeat top fixed ; 
+    background-size:cover;
+    font-family: 'Lobster', cursive;
+}
+
+/* Navbar*/
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  font-family: 'Lobster', cursive;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Lobster', cursive;
+}
+
+a:hover {
+  border-bottom: 1px #20263f solid;
+}
+
+
+.navbar__links i {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.navbar__links i:hover {
+  border-bottom: 1px #10c8e0 solid;
+}
+
+.navigation li:hover {
+  background-color: #1cadb8;
+}
+
+/* Title Format */
+h1 {
+  color: #ffffff;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  display: block;
+  text-shadow: 1px 1px 1px rgb(248, 0, 0);
+}
+.title {
+  text-align: left;
+  justify-content: left;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 30px;
+  animation-name: titleIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Grid Format */
+/*Formats the text inside the image*/
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #000000;
+  text-shadow: 1px 1px 1px rgb(248, 0, 0);
+}
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+}
+
+img {
+  border-radius: 10px;
+  padding: 5px;
+}
+.description {
+  display: none;
+  position: absolute;
+}
+
+.container > div:hover {
+  transform: scale(1.1);
+}
+.container > div:hover .description {
+  display: block;
+  text-align: center;
+}
+
+.container > div:hover img {
+  opacity: 0.7;
+}
+/*Footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.footer__tagline-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 1px 1px 1px rgb(248, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+.footer__tagline {
+  font-style: italic;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgb(248, 0, 0);
+}
